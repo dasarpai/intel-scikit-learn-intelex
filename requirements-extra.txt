@@ -1,0 +1,6 @@
+## Before this install all packages in your virtual environment from requirements-doc.txt file 
+
+ipykernel == 6.29.5
+scikit-learn == 1.5.2
+pandas == 2.2.3
+scikit-learn-intelex == 2024.7.0

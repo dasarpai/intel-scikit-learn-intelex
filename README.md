@@ -1,5 +1,52 @@
-<div align="center">
+# Observations & Experiments by Hari Thapliyal
+## Setup
+- Forked from https://github.com/dasarpai/intel-scikit-learn-intelex
+- Download via github desktop on my windows11 
+- cd intel-scikit-learn-intelex
+- created virtual .venv
+- pip install -r requirements-doc.txt
+- created requirements-extra.txt
+- pip install -r requirements-extra.txt
 
+## Experiments / Run 
+### Run examples\notebooks\linear_regression.ipynb
+#### Compare MSE metric of patched Scikit-learn and original   
+MSE metric of patched Scikit-learn: 0.771676778793335   
+MSE metric of unpatched Scikit-learn: 0.7716856598854065   
+Metrics ratio: 0.9999884963035583   
+
+#### With Scikit-learn-intelex patching you can:   
+Use your Scikit-learn code for training and prediction with minimal changes (a couple of lines of code);
+Fast execution training and prediction of Scikit-learn models;   
+Get the similar quality  
+Get speedup in 118.4 times.  
+
+
+### Run examples\notebooks\nusvr_medical_charges.ipynb
+#### Compare R2 score of patched Scikit-learn and original
+R2 score of patched Scikit-learn: 0.8595757545754246  
+R2 score of unpatched Scikit-learn: 0.8596252069063628  
+Metrics ratio: 0.9999424722186588  
+
+#### With Scikit-learn-intelex patching you can:
+Use your Scikit-learn code for training and prediction with minimal changes (a couple of lines of code);  
+Fast execution training and prediction of Scikit-learn models;  
+Get the similar quality  
+Get speedup in 1.9 times.  
+
+### Run examples\notebooks\knn_mnist.ipynb
+#### With scikit-learn-intelex patching you can:
+Use your Scikit-learn code for training and prediction with minimal changes (a couple of lines of code);  
+Fast execution training and prediction of Scikit-learn models;  
+Get the similar quality  
+Get speedup in 2.3 times.  
+
+### examples\notebooks\svc_adult.ipynb
+#### With scikit-learn-intelex patching you can:
+Use your Scikit-learn code for training and prediction with minimal changes (a couple of lines of code);  
+Fast execution training and prediction of Scikit-learn models;  
+Get the similar quality   
+Get speedup in 7.0 times.  
 
 # Intel(R) Extension for Scikit-learn* 
 
@@ -19,8 +66,6 @@
 ---
 </h3>
 
-<div align="left">
-
 ## Overview
 
 Intel(R) Extension for Scikit-learn is a **free software AI accelerator** designed to deliver over **10-100X** acceleration to your existing scikit-learn code.
@@ -39,7 +84,7 @@ Intel(R) Extension for Scikit-learn is also a part of [Intel(R) AI Tools](https:
 
 ## Acceleration
 
-![](https://raw.githubusercontent.com/intel/scikit-learn-intelex/master/doc/sources/_static/scikit-learn-acceleration.PNG)
+[](https://raw.githubusercontent.com/intel/scikit-learn-intelex/master/doc/sources/_static/scikit-learn-acceleration.PNG)
 
 [Benchmarks code](https://github.com/IntelPython/scikit-learn_bench)
 
